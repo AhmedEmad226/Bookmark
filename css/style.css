@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(247, 237, 223);
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(../theme/font/Pacifico-Regular.ttf);
+}
+
+
+h1 {
+    font-family: "Pacifico";
+    font-size: 60px;
+    position: relative;
+    z-index: 10;
+    margin: 50px;
+}
+
+h1::after {
+    content: '';
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 194, 97);
+    z-index: -10;
+    transition: all 1s;
+}
+
+
+
+h1:hover::after {
+    height: 70%;
+}
+
+.dots{
+    width: 90%;
+    height: 1px;
+    border-bottom: black dotted 2px;
+    margin: 50px 0;
+}
+
+label {
+    margin-right: auto;
+}
+
+
+.subTitle {
+    color: rgb(63,166,29);
+    color: linear-gradient(90deg, rgba(63,166,29,1) 0%, rgba(179,171,73,1) 100%);
+    margin: 40px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit {
+    width: 150px;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    align-items: center;
+    margin: 5px 0;
+    padding: 0;
+    border-bottom: 2px rgb(223, 226, 230) solid;
+}

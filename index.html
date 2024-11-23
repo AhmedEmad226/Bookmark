@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="section container">
+      <h1>Bookmark</h1>
+        <div class="dots"></div>
+      <div class="subTitle">
+        <h2>
+          <i class="fas fa-bookmark"></i> Bookmark your favorite sites <i
+            class="fas fa-bookmark"
+          ></i>
+        </h2>
+      </div>
+      <label for="name"><i class="fas fa-book-bookmark"></i> Site Name</label>
+      <input
+        id="inputName"
+        type="text"
+        class="form-control m-2"
+        placeholder="Bookmark Name"
+      />
+      <p class="alert alert-danger nameAlert d-none">Name must contain at least 3 letters to 15 letter</p>
+      <label for="url"><i class="fas fa-link"></i> Site URL</label>
+      <input
+        id="inputUrl"
+        type="text"
+        class="form-control m-2"
+        placeholder="Website URL"
+      />
+      <p class="alert alert-danger urlAlert d-none">valid URL starting with http:// or https:// try again</p>
+      <button class="btn btn-danger submit" id="submit">Submit</button>
+
+      <div class="dots"></div>
+      
+      <div id="list" class="list w-100 bg-white">
+        <div class="line">
+            <p class="w-25 text-center p-2 lineIndex" id="lineIndex">Index</p>
+            <p class="w-25 text-center p-2 lineName" id="lineName">Website Name</p>
+            <p class="w-25 text-center p-2 lineVisit" id="lineVisit">Visit</p>
+            <p class="w-25 text-center p-2 lineDelete" id="lineDelete">Delete</p>
+        </div>
+    </div>
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/code.js"></script>
+  </body>
+</html>
